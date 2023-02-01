@@ -1,0 +1,71 @@
+.container2{
+  display: flex;
+  margin: 10px;
+}
+h2{
+  margin:10px
+}
+img{
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+.card-deck{
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.card col-3{
+  margin: 10px;
+}
+.container{
+  background-color: antiquewhite;
+}
+.img {
+  position: relative;
+}
+.discription {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  padding: .5em;
+  min-width: 10rem;
+}
+.img:hover .discription{
+  display: block;
+}
+.content-img{
+  position: relative;
+}
+img   p{
+  position: absolute;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear; 
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.content-img:hover{
+  cursor: pointer;
+  display: block;
+}
+.content-img:hover .discription{
+  width: 150px;
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 0.7; 
+}
+img:hover{
+  width: 230px;
+  height: 330px;
+}
+img:hover .discription{
+  display: block;
+  visibility: visible;
+}
